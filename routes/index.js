@@ -6,7 +6,7 @@ router.get("/", function (req, res, next) {
   // const values = ["vishakh", "sundeep", "vikram", "arun"];
   const person = {
     name: "vishakh",
-    comments: { comment: "am a monster", date: "7-9-2004" },
+    admine: false,
   };
   res.render("index", { person });
 });
