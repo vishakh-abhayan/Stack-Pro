@@ -5,7 +5,7 @@
 {{!-- <h1>{{person.name}}</h1>
 <h2>{{person.comments.comment}}</h2>
 <h2>{{person.comments.date}}</h2> --}}
-
+{{!-- 
 {{#if person.admine}}
 
   <h1>this real user </h1>
@@ -14,4 +14,11 @@
 
   <h1>this is normal user</h1>
 
-{{/if}}
+{{/if}} --}}
+
+{{#with person}}
+  {{#with comments}}
+    <h1>{{comment}}</h1>
+    <h1>{{date}}</h1>
+  {{/with}}
+{{/with}}
